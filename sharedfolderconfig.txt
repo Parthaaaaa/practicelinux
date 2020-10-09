@@ -1,0 +1,9 @@
+vmware-hgfsclient //check mnt point
+
+or
+sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000
+
+sudo vmhgfs-fuse .host:/foldername /mnt/ -o allow_other -o uid=1000
+
+May need to install:
+sudo apt-get install open-vm-tools open-vm-tools-desktop
